@@ -22,7 +22,7 @@ Inoffizielle native iOS-App (Swift/SwiftUI, iOS 17+) für die [deSEC](https://de
 
 1. Neues Repo anlegen, Inhalt dieses Ordners pushen (Branch `main`).
 2. Der Workflow `.github/workflows/build.yml` erzeugt mit XcodeGen das Projekt und baut eine **unsignierte IPA**.
-3. Unter *Actions → Build unsigned IPA → Artifacts* die Datei `DesecClient-unsigned.ipa` herunterladen und mit deinem Zertifikat signieren.
+3. Die IPA liegt nach jedem Build direkt unter *Releases* (`DesecClient-unsigned.ipa`, ohne ZIP). Herunterladen und mit deinem Zertifikat signieren. Zusätzlich gibt es sie als ZIP unter *Actions → Artifacts*.
 
 Bundle-ID ändern: `PRODUCT_BUNDLE_IDENTIFIER` in `project.yml`.
 
